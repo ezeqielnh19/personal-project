@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Code 'n Kick</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="logo.ico" />
+  </head>
+  <body>
+    <header class="animate__animated animate__fadeInDown">
+      <a href="home.html" class="logo animate__animated animate__fadeInLeft">Code 'n Kick</a>
+      <nav>
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Me</a>
+      </nav>
+    </header>
+
+    <div class="main-container animate__animated animate__fadeIn">
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="animate__animated animate__fadeInUp">
+            Welcome to <span class="highlight">Code 'n Kick</span>
+          </h1>
+          <p class="animate__animated animate__fadeInUp animate__delay-1s">
+           Ezeqiel Narahan Hutabarat's IMYC Personal Project.
+           Academic Year 2024-2025.
+          </p>
+          <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-2s">
+            <a href="about.html" class="btn primary">About Me</a>
+            <a href="contact.html" class="btn secondary">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image animate__animated animate__fadeInRight animate__delay-1s">
+          <img src="heroimagehome.jpg" alt="Hero" />
+        </div>
+      </section>
+
+      <section class="services">
+        <h2 class="section-title">What I Do</h2>
+        <div class="services-grid">
+          <div class="service-card animate__animated animate__fadeInUp">
+            <i class="fas fa-gamepad"></i>
+            <h3>Gaming</h3>
+            <p>Plays mobile, console, and PC games such as FC, Valorant, and Mobile Legends.</p>
+          </div>
+          <div class="service-card animate__animated animate__fadeInUp animate__delay-1s">
+            <i class="fas fa-running"></i>
+            <h3>Sports</h3>
+            <p>Does sports casually with friends like swimming, football, or basketball.</p>
+          </div>
+          <div class="service-card animate__animated animate__fadeInUp animate__delay-2s">
+            <i class="fas fa-music"></i>
+            <h3>Music</h3>
+            <p>Listens to music and plays the guitar in my free time.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-work">
+        <h2 class="section-title">Latest Blog Posts</h2>
+        <div class="projects-grid">
+          <div class="project-card animate__animated animate__fadeInUp">
+            <div class="project-image">
+              <img src="thumbnails/headingtechnique.png" alt="Heading Drills" />
+            </div>
+            <div class="project-content">
+              <h3>Heading Drills (and mistakes)</h3>
+              <p>Developing proper heading techniques. Safety tips and common mistakes to avoid...</p>
+              <a href="blog.html" class="project-link">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="project-card animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="project-image">
+              <img src="thumbnails/howtocontrol.png" alt="Control Drills" />
+            </div>
+            <div class="project-content">
+              <h3>Control Drills (and mistakes)</h3>
+              <p>Mastering ball control and first touch. Common errors and how to improve your technique...</p>
+              <a href="blog.html" class="project-link">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <style>
+      /* Improved mobile responsiveness */
+      @media (max-width: 768px) {
+        .projects-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+          padding: 0 1rem;
+        }
+
+        .project-card {
+          margin: 0;
+        }
+
+        .project-image {
+          height: 200px;
+        }
+
+        .project-content {
+          padding: 1.5rem;
+        }
+
+        .project-content h3 {
+          font-size: 1.3rem;
+        }
+
+        .project-content p {
+          font-size: 0.9rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .section-title {
+          font-size: 1.8rem;
+          padding: 0 1rem;
+        }
+
+        .project-image {
+          height: 180px;
+        }
+
+        .project-content {
+          padding: 1rem;
+        }
+
+        .project-content h3 {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+  </body>
+</html> 
